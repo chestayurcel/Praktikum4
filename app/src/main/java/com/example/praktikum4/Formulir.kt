@@ -194,6 +194,8 @@ fun RegistrationForm() {
                         color = Color.White
                     )
                 }
+
+                Spacer(modifier = Modifier.height(2.dp))
             }
         }
     }
