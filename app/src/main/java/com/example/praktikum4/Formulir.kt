@@ -188,7 +188,11 @@ fun RegistrationForm() {
                     shape = RoundedCornerShape(30.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = darkPurple)
                 ) {
-                    Text(stringResource(R.string.submit), color = Color.White)
+                    Text(
+                        stringResource(R.string.submit),
+                        color = Color.White,
+                        fontSize = 18.sp
+                    )
                 }
 
                 Spacer(modifier = Modifier.height(2.dp))
