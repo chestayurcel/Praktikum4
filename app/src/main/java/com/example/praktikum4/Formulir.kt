@@ -14,10 +14,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.praktikum4.ui.theme.Praktikum4Theme
 
 @Composable
 fun RegistrationForm() {
@@ -35,6 +33,7 @@ fun RegistrationForm() {
         modifier = Modifier
             .fillMaxSize()
             .background(Color.White)
+            .padding(top = 53.dp)
     ) {
         // Header
         Box(
