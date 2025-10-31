@@ -113,4 +113,26 @@ fun RegistrationForm() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            // Input Alamat
+            Text(
+                text = "ALAMAT",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Gray,
+                modifier = Modifier.padding(bottom = 4.dp)
+            )
+            OutlinedTextField(
+                value = alamat,
+                onValueChange = { alamat = it },
+                label = { Text("Alamat") },
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(8.dp),
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = darkPurple,
+                    unfocusedBorderColor = Color.LightGray,
+                ),
+                keyboardOptions = KeyboardOptions.Default.copy(
+                    imeAction = ImeAction.Done
+                )
+            )
         }
