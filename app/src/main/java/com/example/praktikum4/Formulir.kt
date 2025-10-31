@@ -40,14 +40,16 @@ fun RegistrationForm() {
             modifier = Modifier
                 .fillMaxWidth()
                 .background(lightPurple)
-                .padding(24.dp),
-            contentAlignment = Alignment.Center
+                .height(105.dp)
+                .padding(16.dp),
+            contentAlignment = Alignment.BottomStart
         ) {
             Text(
                 text = "Formulir Pendaftaran",
-                fontSize = 22.sp,
+                fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
-                color = darkPurple
+                color = darkPurple,
+                modifier = Modifier.padding(start = 16.dp)
             )
         }
 
