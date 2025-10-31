@@ -135,4 +135,9 @@ fun RegistrationForm() {
                     imeAction = ImeAction.Done
                 )
             )
+
+            Spacer(modifier = Modifier.weight(1f))
+
+            // Tombol Submit
+
         }
