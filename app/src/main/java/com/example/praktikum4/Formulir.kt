@@ -59,16 +59,14 @@ fun RegistrationForm() {
         // Card untuk Isi Formulir
         Card(
             modifier = Modifier
-                .fillMaxSize()
+                .fillMaxWidth()
                 .padding(horizontal = 16.dp),
-            shape = RoundedCornerShape(30.dp),
+            shape = RoundedCornerShape(25.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 5.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
         ) {
             Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(20.dp)
+                modifier = Modifier.padding(20.dp)
             ) {
                 // Input Nama Lengkap
                 Text(
@@ -178,7 +176,7 @@ fun RegistrationForm() {
                     )
                 )
 
-                Spacer(modifier = Modifier.weight(1f))
+                Spacer(modifier = Modifier.height(32.dp))
 
                 // Tombol Submit
                 Button(
@@ -187,12 +185,12 @@ fun RegistrationForm() {
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(50.dp),
-                    shape = RoundedCornerShape(16.dp),
+                    shape = RoundedCornerShape(30.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = darkPurple)
                 ) {
                     Text(
                         text = "Submit",
-                        fontSize = 16.sp,
+                        fontSize = 18.sp,
                         color = Color.White
                     )
                 }
