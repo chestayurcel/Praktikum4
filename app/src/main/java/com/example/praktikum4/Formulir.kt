@@ -83,7 +83,7 @@ fun RegistrationForm() {
                     shape = RoundedCornerShape(8.dp),
                     colors = OutlinedTextFieldDefaults.colors(
                         focusedBorderColor = darkPurple,
-                        unfocusedBorderColor = Color.LightGray,
+                        unfocusedBorderColor = Color.Black,
                     ),
                     keyboardOptions = KeyboardOptions.Default.copy(
                         imeAction = ImeAction.Next
@@ -168,7 +168,7 @@ fun RegistrationForm() {
                     shape = RoundedCornerShape(8.dp),
                     colors = OutlinedTextFieldDefaults.colors(
                         focusedBorderColor = darkPurple,
-                        unfocusedBorderColor = Color.LightGray,
+                        unfocusedBorderColor = Color.Black,
                     ),
                     keyboardOptions = KeyboardOptions.Default.copy(
                         imeAction = ImeAction.Done
