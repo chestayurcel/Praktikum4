@@ -42,4 +42,11 @@ fun RegistrationForm() {
                 .background(lightPurple)
                 .padding(24.dp),
             contentAlignment = Alignment.Center
-        )
+        ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = darkPurple
+            )
+        }
