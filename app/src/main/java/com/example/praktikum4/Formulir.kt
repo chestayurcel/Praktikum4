@@ -51,7 +51,6 @@ fun RegistrationForm() {
             )
         }
 
-        // --- Isi Formulir ---
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -59,3 +58,27 @@ fun RegistrationForm() {
                 .background(Color(0xFFF7F2FA)) // Warna latar belakang form yang sedikit keunguan
                 .padding(20.dp)
         ) {
+            // --- Input Nama Lengkap ---
+            Text(
+                text = "NAMA LENGKAP",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Gray,
+                modifier = Modifier.padding(bottom = 4.dp)
+            )
+            OutlinedTextField(
+                value = namaLengkap,
+                onValueChange = { namaLengkap = it },
+                label = { Text("Isian nama lengkap") },
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(8.dp),
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = darkPurple,
+                    unfocusedBorderColor = Color.LightGray,
+                ),
+                keyboardOptions = KeyboardOptions.Default.copy(
+                    imeAction = ImeAction.Next
+                )
+            )
+
+        }
