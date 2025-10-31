@@ -36,6 +36,7 @@ fun RegistrationForm() {
             .fillMaxSize()
             .background(Color.White)
     ) {
+        // Header
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -51,6 +52,7 @@ fun RegistrationForm() {
             )
         }
 
+        // Isi Formulir
         Column(
             modifier = Modifier
                 .fillMaxSize()
