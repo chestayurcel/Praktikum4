@@ -85,6 +85,36 @@ fun RegistrationForm() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            // Pilihan Jenis Kelamin
+            Text(
+                text = "JENIS KELAMIN",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Gray
+            )
+            Column {
+                jenisKelaminOptions.forEach { option ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 4.dp)
+                    ) {
+                        RadioButton(
+                            selected = (jenisKelamin == option),
+                            onClick = { jenisKelamin = option },
+                            colors = RadioButtonDefaults.colors(selectedColor = darkPurple)
+                        )
+                        Text(
+                            text = option,
+                            modifier = Modifier.padding(start = 8.dp)
+                        )
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
             // Pilihan Status Perkawinan
             Text(
                 text = "STATUS PERKAWINAN",
