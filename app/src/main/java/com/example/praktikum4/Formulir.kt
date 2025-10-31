@@ -50,3 +50,12 @@ fun RegistrationForm() {
                 color = darkPurple
             )
         }
+
+        // --- Isi Formulir ---
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .clip(RoundedCornerShape(topStart = 30.dp, topEnd = 30.dp))
+                .background(Color(0xFFF7F2FA)) // Warna latar belakang form yang sedikit keunguan
+                .padding(20.dp)
+        ) {
