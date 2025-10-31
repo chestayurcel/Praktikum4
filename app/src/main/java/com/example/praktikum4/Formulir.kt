@@ -27,3 +27,6 @@ fun RegistrationForm() {
     var statusPerkawinan by remember { mutableStateOf("") }
     val statusPerkawinanOptions = listOf("Janda", "Lajang", "Duda")
     var alamat by remember { mutableStateOf("") }
+
+    val lightPurple = Color(0xFFE0D6FF)
+    val darkPurple = Color(0xFF6750A4)
