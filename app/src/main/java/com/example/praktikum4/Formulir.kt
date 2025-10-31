@@ -139,5 +139,19 @@ fun RegistrationForm() {
             Spacer(modifier = Modifier.weight(1f))
 
             // Tombol Submit
-
+            Button(
+                onClick = {
+                },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                shape = RoundedCornerShape(16.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = darkPurple)
+            ) {
+                Text(
+                    text = "Submit",
+                    fontSize = 16.sp,
+                    color = Color.White
+                )
+            }
         }
