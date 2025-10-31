@@ -73,7 +73,7 @@ fun RegistrationForm() {
                 // Input Nama Lengkap
                 Text(
                     text = "NAMA LENGKAP",
-                    fontSize = 12.sp,
+                    fontSize = 15.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Gray,
                     modifier = Modifier.padding(bottom = 4.dp)
@@ -98,7 +98,7 @@ fun RegistrationForm() {
                 // Pilihan Jenis Kelamin
                 Text(
                     text = "JENIS KELAMIN",
-                    fontSize = 12.sp,
+                    fontSize = 15.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Gray
                 )
@@ -128,7 +128,7 @@ fun RegistrationForm() {
                 // Pilihan Status Perkawinan
                 Text(
                     text = "STATUS PERKAWINAN",
-                    fontSize = 12.sp,
+                    fontSize = 15.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Gray
                 )
@@ -158,7 +158,7 @@ fun RegistrationForm() {
                 // Input Alamat
                 Text(
                     text = "ALAMAT",
-                    fontSize = 12.sp,
+                    fontSize = 15.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Gray,
                     modifier = Modifier.padding(bottom = 4.dp)
